@@ -48,6 +48,7 @@ I learned about different data types in Python, such as integers and floats, and
 
 # Modulo (remainder)
 15 % 4  # Output: 3
+
 <!-- THE STRING DATA TYPE -->
 The String Data Type
 I explored strings, which are used to represent text in Python. Strings must be written between single or double quotes. Here are some examples:
@@ -57,6 +58,8 @@ single_quotes = 'This is a string.'
 
 # Double quotes
 double_quotes = "This is also a string."
+
+
 <!-- VARIABLES -->
 Variables
 Variables are reusable labels for data values in Python. I learned how to create variables and assign values to them. Variables can be used anywhere that a data value can be used.
@@ -68,6 +71,8 @@ age = 23
 # Variables are interchangeable
 print(username)  # Output: 'sarah_1987'
 print(age)       # Output: 23
+
+
 <!-- STRING FORMATTING -->
 String Formatting
 I discovered string formatting using the .format() method. It allows me to substitute placeholders with values in a string.
@@ -80,6 +85,7 @@ print(output)  # Output: "12 oranges cost £6.0"
 
 
 <!-- COMMENTS -->
+
 Comments
 I learned about comments, which are human-readable notes in the code. Comments start with a # and are ignored by Python when the code is executed.
 
@@ -93,5 +99,6 @@ output = "{} oranges cost £{}".format(oranges, total_cost)
 print(output)
 
 <!-- RECAP -->
+
 Recap
 In this lesson, I explored fundamental concepts in Python, such as data types, variables, operators, strings, and comments. I also practiced using the Python console and writing Python files.
