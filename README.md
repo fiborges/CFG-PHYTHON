@@ -3,10 +3,10 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://github.com/your-username/your-repo">
-    <img src="https://example.com/your-logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/fiborges/CFG-PHYTHON/blob/main/cfg.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center">Python Course Repository</h3>
+  <h3 align="center">Python Course</h3>
 
   <p align="center">
     This repository contains all the lessons and projects I will be working on during the Python and App Development course. 🚀
@@ -53,4 +53,4 @@ Python is an incredibly versatile and powerful programming language. I chose Pyt
 To get started with this repository, you can clone it locally using the following command:
 
 ```sh
-git clone https://github.com/your-username/your-repo.git
+git clone https://https://github.com/fiborges/CFG-PHYTHON
