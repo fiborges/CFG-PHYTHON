@@ -1,0 +1,161 @@
+Date and Time:
+The datetime module provides classes to work with dates and times. For example, the date class represents a date (year, month, day), and the time class represents a time (hour, minute, second, microsecond). These classes allow you to manipulate and extract information from dates and times.
+
+Datetime:
+The datetime class combines both date and time information. It represents a specific point in time, including the date, time, and microsecond components. This is useful for tasks that require working with both date and time data together.
+
+import datetime
+
+# Create a date object
+date_obj = datetime.date(2023, 7, 15)
+print("Date:", date_obj)  # Output: Date: 2023-07-15
+
+# Create a time object
+time_obj = datetime.time(12, 30, 15)
+print("Time:", time_obj)  # Output: Time: 12:30:15
+
+
+import datetime
+
+# Create a datetime object
+datetime_obj = datetime.datetime(2023, 7, 15, 12, 30, 15)
+print("Datetime:", datetime_obj)  # Output: Datetime: 2023-07-15 12:30:15
+
+
+Timedelta:
+The timedelta class represents a duration or the difference between two dates or times. It allows you to perform arithmetic operations like addition or subtraction with dates, which is useful for calculating time intervals or determining deadlines.
+
+import datetime
+
+# Calculate the difference between two dates
+date1 = datetime.date(2023, 7, 15)
+date2 = datetime.date(2023, 7, 10)
+time_difference = date1 - date2
+print("Time Difference:", time_difference)  # Output: Time Difference: 5 days, 0:00:00
+
+
+
+Converting Text to Date Objects:
+The datetime.strptime() function enables you to convert text into datetime objects. This is useful when you have dates or times in string format and need to convert them into Python's datetime objects for further manipulation.
+
+import datetime
+
+# Convert text to a datetime object
+date_string = "2023-07-15"
+date_obj = datetime.datetime.strptime(date_string, "%Y-%m-%d")
+print("Date Object:", date_obj)  # Output: Date Object: 2023-07-15 00:00:00
+
+
+Performing Date Calculations:
+With datetime and timedelta objects, you can perform various date calculations, such as finding the difference between two dates, adding or subtracting time intervals, or comparing dates to check if one is greater than or less than the other.
+
+import datetime
+
+# Calculate a future date
+current_date = datetime.date.today()
+days_to_add = datetime.timedelta(days=7)
+future_date = current_date + days_to_add
+print("Future Date:", future_date)  # Output: Future Date: 2023-07-26 + 7 days
+
+Formatting Dates for Display:
+The strftime() method allows you to format datetime objects into human-readable strings. It provides a way to represent dates and times in various formats, making them more understandable and visually appealing for displaying to users.
+
+import datetime
+
+# Format a datetime object as a string
+datetime_obj = datetime.datetime(2023, 7, 15, 12, 30, 15)
+formatted_date = datetime_obj.strftime("%B %d, %Y %H:%M:%S")
+print("Formatted Date:", formatted_date)  # Output: Formatted Date: July 15, 2023 12:30:15
+
+Overall, the datetime module is a versatile and essential tool for handling date and time-related tasks in Python. Whether it's working with dates, times, or performing calculations involving timedeltas, this module provides the necessary functionalities to make date and time manipulation efficient and straightforward.
+
+Character codes examples:
+%a: Returns the first three characters of the weekday, e.g. Wed.
+%A: Returns the full name of the weekday, e.g. Wednesday.
+%B: Returns the full name of the month, e.g. September.
+%w: Returns the weekday as a number, from 0 to 6, with Sunday being 0.
+%m: Returns the month as a number, from 01 to 12.
+%p: Returns AM/PM for time.
+%f: Returns microsecond from 000000 to 999999.
+%Z: Returns the timezone.
+%Y: Returns the year in four digit format
+%b: Returns the first three characters of the month name.
+%d: Returns day of the month, from 1 to 31.
+%Y: Returns the year in four-digit format.
+%H: Returns the hour.
+%M: Returns the minute, from 00 to 59.
+%S: Returns the second, from 00 to 59.
+
+
+--------------------------------------------------------
+
+Timedelta represents a duration or difference between two dates or times. It is like a "time gap" that can measure days, seconds, microseconds, etc. between two points in time.
+
+Examples:
+Calculate the difference between two dates:
+
+from datetime import datetime
+
+# Get two dates
+date1 = datetime(2023, 8, 1)
+date2 = datetime(2023, 8, 15)
+
+# Calculate the duration between the two dates
+duration = date2 - date1
+print(duration)  
+
+# Output: 14 days, 0:00:00
+
+
+Calculate the time it takes to perform a task:
+
+from datetime import timedelta
+
+# A task takes 2 hours, 30 minutes, and 15 seconds to complete
+task_duration = timedelta(hours=2, minutes=30, seconds=15)
+
+# If we started the task at 10:00 AM, when will it end?
+start_time = datetime(2023, 8, 1, hour=10, minute=0, second=0)
+end_time = start_time + task_duration
+print(end_time)  
+
+# Output: 2023-08-01 12:30:15
+
+Calculate the time remaining for an event:
+
+from datetime import datetime
+
+# An event will start on August 15, 2023, at 2:30 PM
+event_date = datetime(2023, 8, 15, hour=14, minute=30)
+
+# Calculate the time remaining for the event from today's date
+today = datetime.today()
+time_remaining = event_date - today
+print(time_remaining)  
+
+# Output: 10 days, 2:19:45.123456
+
+
+Scheduling tasks with time intervals:
+
+from datetime import datetime, timedelta
+
+# Schedule a task to run every 2 hours
+task_interval = timedelta(hours=2)
+
+# Get the current time
+current_time = datetime.now()
+
+# Schedule the next task
+next_task_time = current_time + task_interval
+print(next_task_time)
+
+
+
+
+
+
+
+
+
+
