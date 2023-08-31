@@ -6,7 +6,7 @@ import requests
 import random
 
 
-#choose_house=input('what is your house?1,2,3,4')
+choose_house=input('what is your house?1,2,3,4')
 #need code to show what each house is like your pokemon numbering
 
 house_1==houses['Gryffindor']
