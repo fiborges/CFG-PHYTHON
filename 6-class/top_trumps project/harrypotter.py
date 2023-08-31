@@ -5,7 +5,7 @@
 import requests
 import random
 
-
+#STEP 1: CHOOSE HOUSE
 choose_house=input('what is your house?1,2,3,4')
 #need code to show what each house is like your pokemon numbering
 
@@ -25,16 +25,16 @@ else:
    return 'unknown house'
 
 
-# if the house is random 
-#def random_house():
-   #house_number =random.randint(1,4)
+# STEP 2 RANDOM CHARACTER
+#def random_character():
+   #random_character =random.randint(1,151)
   # add api url =....
 #requests= requests.get(url)
-#house = response.json()
+#player = response.json()
 
 
 ###return{
-#house??????? not sure 
+# not sure 
 #}
 
 
